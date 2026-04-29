@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparador: Secadores Eléctricos vs Papel</title>
+    <title>Comparador: Secadores Eléctricos vs Papel - Translaval</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Animación suave para mostrar los resultados */
@@ -16,72 +16,112 @@
         }
     </style>
 </head>
-<body class="bg-slate-50 min-h-screen p-4 md:p-8 font-sans text-slate-800">
+<body class="bg-slate-100 min-h-screen p-2 md:p-8 font-sans text-slate-800">
 
-    <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
-        <!-- Encabezado -->
-        <div class="bg-blue-600 p-6 text-white text-center">
-            <h1 class="text-2xl md:text-3xl font-bold mb-2">⚖️ Comparador de Costos de Baños</h1>
-            <p class="text-blue-100">Secadores Eléctricos vs Toallas de Papel</p>
+    <!-- Contenedor principal modernizado -->
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden border border-slate-200">
+        
+        <!-- ENCABEZADO INSTITUCIONAL TRANSLAVAL MEJORADO -->
+        <div class="bg-white p-6 md:p-8 border-b-4 border-[#58B319] flex flex-col md:flex-row items-center gap-6 bg-gradient-to-b from-white to-slate-50">
+            
+            <!-- Izquierda: Logo -->
+            <div class="w-full md:w-1/4 flex justify-center md:justify-start">
+                <img src="https://www.translaval.com/wp-content/uploads/2021/01/logo-translaval-bicolor.png" alt="Logo Translaval" class="h-16 md:h-20 object-contain drop-shadow-sm">
+            </div>
+
+            <!-- Centro: Título -->
+            <div class="w-full md:w-2/4 text-center">
+                <h1 class="text-xl md:text-2xl font-black text-[#0F4024] uppercase tracking-wide mb-1">
+                    Comparativa de Costos
+                </h1>
+                <h2 class="text-sm md:text-base text-slate-500 font-semibold uppercase tracking-wider">
+                    Energía Eléctrica vs Compra de Papel
+                </h2>
+            </div>
+
+            <!-- Derecha: Tabla de Metadatos -->
+            <div class="w-full md:w-1/4 flex justify-center md:justify-end">
+                <div class="bg-white border border-slate-200 rounded-lg p-3 text-xs text-slate-600 shadow-sm w-full max-w-[200px]">
+                    <div class="flex justify-between border-b border-slate-100 pb-1.5 mb-1.5">
+                        <span class="font-bold text-[#0F4024]">CÓDIGO:</span>
+                        <span class="font-medium">FO-SI-31</span>
+                    </div>
+                    <div class="flex justify-between border-b border-slate-100 pb-1.5 mb-1.5">
+                        <span class="font-bold text-[#0F4024]">VERSIÓN:</span>
+                        <span class="font-medium">01</span>
+                    </div>
+                    <div class="flex justify-between border-b border-slate-100 pb-1.5 mb-1.5">
+                        <span class="font-bold text-[#0F4024] text-[0.65rem]">FECHA ELAB:</span>
+                        <span class="font-medium">28/04/2026</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="font-bold text-[#0F4024] text-[0.65rem]">FECHA MOD:</span>
+                        <span class="font-medium">N/A</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <!-- FIN ENCABEZADO INSTITUCIONAL -->
 
-        <div class="p-6 md:p-8">
-            <p class="text-slate-600 mb-8 text-center">
-                Ingresa los datos mensuales para descubrir si fue una buena inversión el cambio a secadores eléctricos o si es más rentable el uso de papel desechable.
+        <!-- CUERPO DEL DOCUMENTO -->
+        <div class="p-6 md:p-10">
+            <p class="text-slate-600 mb-8 text-center text-sm md:text-base">
+                Por favor, ingrese los datos de consumo mensual para validar la rentabilidad de la instalación del sistema de secadores eléctricos.
             </p>
 
             <form id="calculatorForm" class="grid md:grid-cols-2 gap-8">
                 
                 <!-- Sección de Energía -->
-                <div class="bg-amber-50 p-6 rounded-xl border border-amber-200">
-                    <h2 class="text-xl font-bold text-amber-800 mb-4 flex items-center">
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 border-t-4 border-t-[#0F4024] shadow-sm">
+                    <h2 class="text-xl font-bold text-[#0F4024] mb-4 flex items-center">
                         <span class="text-2xl mr-2">⚡</span> Datos de Energía
                     </h2>
                     
                     <div class="space-y-4">
                         <div>
-                            <label class="block text-sm font-medium text-amber-900 mb-1" for="energiaAntes">
+                            <label class="block text-sm font-medium text-slate-700 mb-1" for="energiaAntes">
                                 Factura ANTES de los secadores ($)
                             </label>
                             <input type="number" id="energiaAntes" required min="0" step="0.01"
-                                class="w-full px-4 py-2 rounded-lg border border-amber-300 focus:ring-2 focus:ring-amber-500 focus:outline-none"
+                                class="w-full px-4 py-2 bg-white rounded-lg border border-slate-300 focus:ring-2 focus:ring-[#58B319] focus:outline-none transition-shadow"
                                 placeholder="Ej. 150000">
                         </div>
                         
                         <div>
-                            <label class="block text-sm font-medium text-amber-900 mb-1" for="energiaDespues">
+                            <label class="block text-sm font-medium text-slate-700 mb-1" for="energiaDespues">
                                 Factura DESPUÉS de los secadores ($)
                             </label>
                             <input type="number" id="energiaDespues" required min="0" step="0.01"
-                                class="w-full px-4 py-2 rounded-lg border border-amber-300 focus:ring-2 focus:ring-amber-500 focus:outline-none"
+                                class="w-full px-4 py-2 bg-white rounded-lg border border-slate-300 focus:ring-2 focus:ring-[#58B319] focus:outline-none transition-shadow"
                                 placeholder="Ej. 180000">
-                            <p class="text-xs text-amber-700 mt-1">El costo real de los secadores será la diferencia entre ambas facturas.</p>
+                            <p class="text-xs text-slate-500 mt-2">El costo real de los secadores será la diferencia entre ambas facturas.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Sección de Papel -->
-                <div class="bg-emerald-50 p-6 rounded-xl border border-emerald-200">
-                    <h2 class="text-xl font-bold text-emerald-800 mb-4 flex items-center">
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 border-t-4 border-t-[#58B319] shadow-sm">
+                    <h2 class="text-xl font-bold text-[#0F4024] mb-4 flex items-center">
                         <span class="text-2xl mr-2">🧻</span> Datos de Papel
                     </h2>
                     
                     <div class="space-y-4">
                         <div>
-                            <label class="block text-sm font-medium text-emerald-900 mb-1" for="precioPapel">
+                            <label class="block text-sm font-medium text-slate-700 mb-1" for="precioPapel">
                                 Precio por unidad/paquete ($)
                             </label>
                             <input type="number" id="precioPapel" required min="0" step="0.01"
-                                class="w-full px-4 py-2 rounded-lg border border-emerald-300 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                                class="w-full px-4 py-2 bg-white rounded-lg border border-slate-300 focus:ring-2 focus:ring-[#58B319] focus:outline-none transition-shadow"
                                 placeholder="Ej. 5000">
                         </div>
                         
                         <div>
-                            <label class="block text-sm font-medium text-emerald-900 mb-1" for="cantidadPapel">
+                            <label class="block text-sm font-medium text-slate-700 mb-1" for="cantidadPapel">
                                 Unidades compradas al mes
                             </label>
                             <input type="number" id="cantidadPapel" required min="0" step="1"
-                                class="w-full px-4 py-2 rounded-lg border border-emerald-300 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                                class="w-full px-4 py-2 bg-white rounded-lg border border-slate-300 focus:ring-2 focus:ring-[#58B319] focus:outline-none transition-shadow"
                                 placeholder="Ej. 10">
                         </div>
                     </div>
@@ -90,38 +130,38 @@
                 <!-- Botón de calcular -->
                 <div class="md:col-span-2 mt-4">
                     <button type="submit" 
-                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition duration-200 transform hover:scale-[1.01] shadow-md">
-                        Calcular Comparación
+                        class="w-full bg-[#0F4024] hover:bg-[#155a32] text-white font-bold py-4 px-6 rounded-xl transition duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        EJECUTAR COMPARACIÓN
                     </button>
                 </div>
             </form>
 
             <!-- Sección de Resultados (Oculta por defecto) -->
-            <div id="resultadoSeccion" class="hidden mt-10 pt-8 border-t border-slate-200 fade-in">
-                <h3 class="text-2xl font-bold text-center mb-6 text-slate-800">Resultados del Análisis</h3>
+            <div id="resultadoSeccion" class="hidden mt-10 pt-8 border-t-2 border-slate-200 fade-in">
+                <h3 class="text-2xl font-bold text-center mb-6 text-[#0F4024]">Resultados del Análisis</h3>
                 
                 <div class="grid grid-cols-2 gap-4 mb-8">
                     <!-- Tarjeta Costo Secadores -->
-                    <div class="bg-white p-4 rounded-lg shadow border-l-4 border-amber-500">
-                        <p class="text-sm text-slate-500 font-semibold uppercase">Aumento en Energía</p>
-                        <p id="resAumentoEnergia" class="text-2xl font-bold text-amber-600 mt-1">$0</p>
-                        <p class="text-xs text-slate-400 mt-1">(Costo de mantener los secadores)</p>
+                    <div class="bg-white p-4 border border-slate-200 shadow-sm border-t-4 border-t-[#0F4024]">
+                        <p class="text-xs text-slate-500 font-bold uppercase tracking-wider">Aumento en Energía</p>
+                        <p id="resAumentoEnergia" class="text-2xl md:text-3xl font-black text-[#0F4024] mt-1">$0</p>
+                        <p class="text-[0.65rem] md:text-xs text-slate-400 mt-1 uppercase">(Costo de mantener los secadores)</p>
                     </div>
                     
                     <!-- Tarjeta Costo Papel -->
-                    <div class="bg-white p-4 rounded-lg shadow border-l-4 border-emerald-500">
-                        <p class="text-sm text-slate-500 font-semibold uppercase">Gasto en Papel</p>
-                        <p id="resGastoPapel" class="text-2xl font-bold text-emerald-600 mt-1">$0</p>
-                        <p class="text-xs text-slate-400 mt-1">(Costo si compraras papel)</p>
+                    <div class="bg-white p-4 border border-slate-200 shadow-sm border-t-4 border-t-[#58B319]">
+                        <p class="text-xs text-slate-500 font-bold uppercase tracking-wider">Gasto en Papel</p>
+                        <p id="resGastoPapel" class="text-2xl md:text-3xl font-black text-[#58B319] mt-1">$0</p>
+                        <p class="text-[0.65rem] md:text-xs text-slate-400 mt-1 uppercase">(Costo histórico en papel)</p>
                     </div>
                 </div>
 
                 <!-- Veredicto Final -->
-                <div id="veredictoCaja" class="p-6 rounded-xl text-center shadow-inner">
-                    <h4 class="text-xl font-bold mb-2 flex justify-center items-center gap-2" id="veredictoTitulo">
+                <div id="veredictoCaja" class="p-6 text-center shadow-inner border">
+                    <h4 class="text-xl font-bold mb-3 flex justify-center items-center gap-2" id="veredictoTitulo">
                         <!-- El título se inserta por JS -->
                     </h4>
-                    <p id="veredictoTexto" class="text-lg">
+                    <p id="veredictoTexto" class="text-base md:text-lg">
                         <!-- El texto se inserta por JS -->
                     </p>
                 </div>
@@ -130,7 +170,7 @@
     </div>
 
     <script>
-        // Formateador de moneda (ajustado a formato general en español)
+        // Formateador de moneda (ajustado a formato general en español de Colombia)
         const formatearMoneda = (valor) => {
             return new Intl.NumberFormat('es-CO', { 
                 style: 'currency', 
@@ -141,7 +181,7 @@
         };
 
         document.getElementById('calculatorForm').addEventListener('submit', function(e) {
-            e.preventDefault(); // Evita que la página se recargue
+            e.preventDefault(); 
 
             // 1. Obtener valores de los inputs
             const energiaAntes = parseFloat(document.getElementById('energiaAntes').value);
@@ -149,16 +189,14 @@
             const precioPapel = parseFloat(document.getElementById('precioPapel').value);
             const cantidadPapel = parseFloat(document.getElementById('cantidadPapel').value);
 
-            // Validar que la factura después no sea menor que antes por lógica (aunque podría pasar por otros factores, advertimos)
+            // Validar que la factura después no sea menor que antes
             if (energiaAntes > energiaDespues) {
-                alert("La factura de energía después de instalar secadores debería ser mayor o igual a la anterior para un cálculo preciso del aumento.");
-                // No detenemos el cálculo, pero si el aumento es negativo, lo tomamos como 0 para ser conservadores, o lo mostramos como ahorro.
+                alert("Aviso: La factura de energía después de instalar secadores debería ser mayor o igual a la anterior para calcular el costo adicional.");
             }
 
-            // 2. Realizar cálculos
-            // El costo real de usar los secadores es lo que subió la factura
+            // 2. Cálculos
             let aumentoEnergia = energiaDespues - energiaAntes;
-            if (aumentoEnergia < 0) aumentoEnergia = 0; // Si bajó la luz por otro motivo, asumimos que el costo extra es 0.
+            if (aumentoEnergia < 0) aumentoEnergia = 0; 
 
             const gastoPapel = precioPapel * cantidadPapel;
             const diferencia = Math.abs(aumentoEnergia - gastoPapel);
@@ -167,46 +205,45 @@
             document.getElementById('resAumentoEnergia').textContent = formatearMoneda(aumentoEnergia);
             document.getElementById('resGastoPapel').textContent = formatearMoneda(gastoPapel);
 
-            // 4. Lógica del veredicto final
+            // 4. Lógica del veredicto final con colores institucionales
             const veredictoCaja = document.getElementById('veredictoCaja');
             const veredictoTitulo = document.getElementById('veredictoTitulo');
             const veredictoTexto = document.getElementById('veredictoTexto');
 
-            // Resetear clases de la caja
-            veredictoCaja.className = 'p-6 rounded-xl text-center shadow-inner';
+            // Limpiar clases
+            veredictoCaja.className = 'p-6 text-center shadow-inner border';
 
             if (aumentoEnergia < gastoPapel) {
-                // Es más rentable el secador
-                veredictoCaja.classList.add('bg-blue-50', 'border', 'border-blue-200');
-                veredictoTitulo.innerHTML = '🏆 ¡El sistema de secadores es más rentable!';
-                veredictoTitulo.className = 'text-xl font-bold mb-2 flex justify-center items-center gap-2 text-blue-800';
-                veredictoTexto.innerHTML = `Excelente decisión. Al usar los secadores eléctricos en lugar de comprar papel, estás generando un <strong>ahorro de ${formatearMoneda(diferencia)} al mes</strong>. Además, reduces los residuos sólidos en la oficina.`;
-                veredictoTexto.className = 'text-lg text-blue-900';
+                // Es más rentable el secador (Verde Institucional)
+                veredictoCaja.classList.add('bg-[#f0f9eb]', 'border-[#58B319]');
+                veredictoTitulo.innerHTML = '✅ El sistema de secadores es más rentable';
+                veredictoTitulo.className = 'text-xl md:text-2xl font-black mb-3 flex justify-center items-center gap-2 text-[#0F4024]';
+                veredictoTexto.innerHTML = `Excelente decisión. Al usar los secadores eléctricos en lugar de comprar papel, la empresa está generando un <strong>ahorro mensual de ${formatearMoneda(diferencia)}</strong>. Además, se cumple con la política de reducción de residuos sólidos.`;
+                veredictoTexto.className = 'text-base md:text-lg text-[#155a32]';
 
             } else if (gastoPapel < aumentoEnergia) {
-                // Es más rentable el papel
-                veredictoCaja.classList.add('bg-red-50', 'border', 'border-red-200');
+                // Es más rentable el papel (Rojo / Advertencia)
+                veredictoCaja.classList.add('bg-red-50', 'border-red-300');
                 veredictoTitulo.innerHTML = '⚠️ Comprar papel resulta más económico';
-                veredictoTitulo.className = 'text-xl font-bold mb-2 flex justify-center items-center gap-2 text-red-800';
-                veredictoTexto.innerHTML = `El aumento en la factura de energía es muy alto. Volver a las toallas de papel te ahorraría <strong>${formatearMoneda(diferencia)} al mes</strong>.<br><br><span class="text-sm mt-2 block opacity-80">Recomendación: Verifica si los secadores son de bajo consumo o si están encendidos más tiempo del necesario. Si la diferencia es pequeña, puedes mantenerlos por higiene y comodidad.</span>`;
-                veredictoTexto.className = 'text-lg text-red-900';
+                veredictoTitulo.className = 'text-xl md:text-2xl font-black mb-3 flex justify-center items-center gap-2 text-red-800';
+                veredictoTexto.innerHTML = `El aumento en la factura de energía supera el costo del papel. Volver a las toallas desechables representaría un ahorro de <strong>${formatearMoneda(diferencia)} al mes</strong>.<br><br><span class="text-sm mt-3 block opacity-80 border-t border-red-200 pt-3">Recomendación: Auditar si los secadores son de alto consumo, si quedan encendidos de forma continua o evaluar si los beneficios de higiene justifican el sobrecosto operativo.</span>`;
+                veredictoTexto.className = 'text-base md:text-lg text-red-900';
 
             } else {
                 // Cuestan lo mismo
-                veredictoCaja.classList.add('bg-slate-100', 'border', 'border-slate-300');
-                veredictoTitulo.innerHTML = '⚖️ Los costos son exactamente iguales';
-                veredictoTitulo.className = 'text-xl font-bold mb-2 flex justify-center items-center gap-2 text-slate-800';
-                veredictoTexto.innerHTML = `No hay diferencia económica (${formatearMoneda(0)}). En este caso, te recomendamos usar los secadores eléctricos ya que son más amigables con el medio ambiente al generar menos basura y requieren menos mantenimiento de limpieza en los baños.`;
-                veredictoTexto.className = 'text-lg text-slate-700';
+                veredictoCaja.classList.add('bg-slate-100', 'border-slate-300');
+                veredictoTitulo.innerHTML = '⚖️ Punto de equilibrio alcanzado';
+                veredictoTitulo.className = 'text-xl md:text-2xl font-black mb-3 flex justify-center items-center gap-2 text-slate-800';
+                veredictoTexto.innerHTML = `No hay diferencia económica (${formatearMoneda(0)}). Se recomienda mantener el sistema de secadores eléctricos por su beneficio ambiental, reducción de logística de aseo y mejor imagen institucional en las instalaciones.`;
+                veredictoTexto.className = 'text-base md:text-lg text-slate-700';
             }
 
-            // 5. Mostrar la sección de resultados (quitar el 'hidden')
+            // 5. Mostrar la sección
             const seccionResultados = document.getElementById('resultadoSeccion');
             seccionResultados.classList.remove('hidden');
             
-            // Pequeño scroll suave hacia los resultados
             setTimeout(() => {
-                seccionResultados.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                seccionResultados.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }, 100);
         });
     </script>
